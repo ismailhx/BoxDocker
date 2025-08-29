@@ -19,6 +19,7 @@ Developed within the NVIDIA Isaac Sim simulation environment, the BoxDocker is a
 ## Key Findings
 Our simulation results validate the technical feasibility of the BoxDocker. The YOLOv11 model achieved over 97% detection accuracy, while the control system maintained a debris evasion rate of over 98%. The capture mechanisms also demonstrated high success rates on their respective target types. These findings confirm that a single, scalable robotic solution for space debris removal is a viable concept.
 
-<img width="475" height="314" alt="image" src="https://github.com/user-attachments/assets/16df5a5b-b76e-4350-8faf-f905ca234db0" /> <img width="534" height="410" alt="Screenshot 2025-08-19 143136" src="https://github.com/user-attachments/assets/fbd5abf7-3a55-4df0-afb2-fdcdf4c49557" />
+<img width="591" height="391" alt="Screenshot 2025-07-24 064843" src="https://github.com/user-attachments/assets/635a3d78-280e-450e-aca4-4d3b00eb6ffc" />
+ <img width="534" height="410" alt="Screenshot 2025-08-19 143136" src="https://github.com/user-attachments/assets/fbd5abf7-3a55-4df0-afb2-fdcdf4c49557" />
 
 ## BoxDocker in Action
