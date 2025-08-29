@@ -1,18 +1,19 @@
 # BoxDocker: An Autonomous Debris Removal System
 
+<img width="895" height="478" alt="image" src="https://github.com/user-attachments/assets/f19cc32b-a49a-409a-800a-a6256b330f82" />
 BoxDocker is an autonomous robotics spacecraft designed to combat the growing problem of space debris in Low Earth Orbit simulated in IsaacSim. 
 The system is a versatile solution that uses a YOLOv11 deep learning model for real-time vision and a closed-loop control algorithm to detect and collect various space debris, as well as avoiding dangerous debris.
 
-Technologies: YOLOv11 Computer Vision | IsaacSim | Robotics | CAD.
-<img width="895" height="478" alt="image" src="https://github.com/user-attachments/assets/f19cc32b-a49a-409a-800a-a6256b330f82" />
-
-## Project Summary
-<img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/6cfe36ce-32c6-4aec-9564-25b84159d1a5" />
-
-
 
 ## Technical Approach
+### Technologies: YOLOv11 Computer Vision | IsaacSim | Robotics | CAD.
 Developed within the NVIDIA Isaac Sim simulation environment, the BoxDocker is a multi-modal spacecraft with specialized capture mechanisms. These include a prismatic docker for large debris, deployable doors for mid-sized objects, and aerogel flaps for mcroscopic flecks. This simulation-first approach allowed us to rigorously test the system's ability to autonomously detect, evade, and capture a wide range of debris.
+<img width="772" height="267" alt="Screenshot 2025-08-29 211126" src="https://github.com/user-attachments/assets/3f2d5d5f-e697-41df-9923-4eef08d7a7a3" />
+<img width="639" height="179" alt="Screenshot 2025-08-29 211147" src="https://github.com/user-attachments/assets/ec566dd2-cc8d-44f0-891e-008f9c2ada1b" />
+<img width="417" height="173" alt="Screenshot 2025-08-29 211201" src="https://github.com/user-attachments/assets/017e958a-ce30-428a-a6eb-80933bde9d73" />
+
 
 ## Key Findings
 Our simulation results validate the technical feasibility of the BoxDocker. The YOLOv11 model achieved over 97% detection accuracy, while the control system maintained a debris evasion rate of over 98%. The capture mechanisms also demonstrated high success rates on their respective target types. These findings confirm that a single, scalable robotic solution for space debris removal is a viable concept.
+<img width="475" height="314" alt="image" src="https://github.com/user-attachments/assets/16df5a5b-b76e-4350-8faf-f905ca234db0" />
+<img width="534" height="410" alt="Screenshot 2025-08-19 143136" src="https://github.com/user-attachments/assets/fbd5abf7-3a55-4df0-afb2-fdcdf4c49557" />
