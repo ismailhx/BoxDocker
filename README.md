@@ -2,6 +2,7 @@
 
 <img width="895" height="478" alt="image" src="https://github.com/user-attachments/assets/f19cc32b-a49a-409a-800a-a6256b330f82" />
 
+## Project Summary
 BoxDocker is an autonomous robotics spacecraft designed to combat the growing problem of space debris in Low Earth Orbit simulated in IsaacSim. 
 The system is a versatile solution that uses a YOLOv11 deep learning model for real-time vision and a closed-loop control algorithm to detect and collect various space debris, as well as avoiding dangerous debris.
 
