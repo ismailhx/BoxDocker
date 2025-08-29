@@ -9,7 +9,7 @@ The system is a versatile solution that uses a YOLOv11 deep learning model for r
 
 ## Technical Approach
 ### Technologies: YOLOv11 Computer Vision | IsaacSim | Robotics | CAD.
-Developed within the NVIDIA Isaac Sim simulation environment, the BoxDocker is a multi-modal spacecraft with specialized capture mechanisms. These include a prismatic docker for large debris, deployable doors for mid-sized objects, and aerogel flaps for mcroscopic flecks. This simulation-first approach allowed us to rigorously test the system's ability to autonomously detect, evade, and capture a wide range of debris.
+Developed within the NVIDIA Isaac Sim simulation environment, the BoxDocker is a multi-modal spacecraft with specialized capture mechanisms. These include a prismatic docker for small debris (1-10cm), deployable doors for mid-sized objects (10cm+), and aerogel flaps for mcroscopic flecks (under 1cm). Currently there is no existing solution that tackles all these debris sizes making it unique. This simulation-first approach allowed us to rigorously test the system's ability to autonomously detect, evade, and capture a wide range of debris.
 
 <img width="772" height="267" alt="Screenshot 2025-08-29 211126" src="https://github.com/user-attachments/assets/3f2d5d5f-e697-41df-9923-4eef08d7a7a3" />
 <img width="639" height="179" alt="Screenshot 2025-08-29 211147" src="https://github.com/user-attachments/assets/ec566dd2-cc8d-44f0-891e-008f9c2ada1b" />
