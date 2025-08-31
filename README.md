@@ -10,7 +10,7 @@ The system is a versatile solution that uses a YOLOv11 deep learning model for r
 Space debris is one of the fastest-growing threats to space operations, with over **36,000 tracked objects larger than 10 cm** and **hundreds of millions of smaller fragments** orbiting Earth at high velocities. Even a fleck of paint can cause severe damage to satellites or spacecraft due to the extreme kinetic energy involved. This accumulation of debris not only endangers current missions but also risks triggering the **Kessler Syndrome** — a cascade of collisions that could make Low Earth orbit increasingly hazardous. Addressing this problem requires innovative autonomous systems in space capable of detecting, avoiding, and removing debris of all sizes.
 
 ## Technical Approach
-### Technologies: YOLOv11 Computer Vision | IsaacSim | Robotics | CAD.
+### Technologies: YOLOv11 and Azure AI Computer Vision | IsaacSim | Robotics | CAD.
 Developed within the NVIDIA Isaac Sim simulation environment, the BoxDocker spacecraft is an example of such a system, specialized with multi-modal capture mechanisms. These include a prismatic docker for small debris (1-10cm), deployable doors for mid-sized objects (10cm+), and aerogel flaps for mcroscopic flecks (under 1cm). Currently there is no existing solution that tackles all these debris sizes making this system unique. This simulation-first approach allowed the rigorous testing of the system's ability to autonomously detect, evade, and capture a wide range of debris.
 
 <img width="772" height="267" alt="Screenshot 2025-08-29 211126" src="https://github.com/user-attachments/assets/3f2d5d5f-e697-41df-9923-4eef08d7a7a3" />
