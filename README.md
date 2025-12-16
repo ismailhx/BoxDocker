@@ -13,6 +13,52 @@ Space debris is one of the fastest-growing threats to space operations, with ove
 
 This project was run on **Google Cloud Platform (GCP)** and Azure.  
 
+### GCP Implementation
+
+1. **Set up Cloud Storage**  
+   - Created a **Google Cloud Storage** bucket to hold all project files.  
+   - Made three subfolders:  
+     - `images` → pictures of debris from IsaacSim  
+     - `logs` → records of spacecraft actions  
+     - `checkpoints` → snapshots of the AI brain (YOLOv11) at different stages  
+
+2. **Captured Simulation Images**  
+   - Ran **IsaacSim** and saved images showing:  
+     - Small debris (1–10 cm)  
+     - Medium debris (10–50 cm)  
+     - Tiny flecks (dust or paint)  
+   - Uploaded these images to **Cloud Storage** to train or test the AI.  
+
+3. **Uploaded Files**  
+   - Uploaded all simulation images, logs, and AI checkpoints to their corresponding folders in **Cloud Storage**.  
+
+4. **Launched Cloud Computer**  
+   - Started a **Compute Engine VM** with an NVIDIA GPU to run the AI and control program.  
+
+5. **Installed Tools**  
+   - Installed Python and AI libraries on the VM to run **YOLOv11** and the spacecraft **control program**.  
+
+6. **Trained YOLOv11 (Optional / Verification)**  
+   - Used the simulation images stored in **Cloud Storage** to train YOLOv11.  
+   - Saved progress as **checkpoints**.  
+   - Tracked experiments and performance using **Vertex AI**.  
+
+7. **Deployed the Control Program**  
+   - Loaded the spacecraft control program on the Compute Engine VM.  
+   - The control program acted as BoxDocker’s “brain,” deciding:  
+     - When to **evade dangerous debris**  
+     - When to **activate the correct capture mechanism**  
+
+8. **Connected AI to Control**  
+   - Used **Pub/Sub** to send real-time detection results from YOLOv11 to the control program on the VM.  
+
+9. **Ran Simulation and Analysed Performance**  
+   - The control program moved the spacecraft in IsaacSim based on AI detections.  
+   - Collected logs using **Cloud Logging** and analysed performance in **BigQuery** to check:  
+     - Debris capture success  
+     - Collision avoidance (>98% success)  
+     - Time taken for each maneuver
+     
 
 ### Technologies: YOLOv11 and Azure AI Computer Vision | IsaacSim | Robotics | CAD.
 Developed within the NVIDIA Isaac Sim simulation environment, the BoxDocker spacecraft is an example of such a system, specialized with multi-modal capture mechanisms. These include a prismatic docker for small debris (1-10cm), deployable doors for mid-sized objects (10cm+), and aerogel flaps for mcroscopic flecks (under 1cm). Currently there is no existing solution that tackles all these debris sizes making this system unique. This simulation-first approach allowed the rigorous testing of the system's ability to autonomously detect, evade, and capture a wide range of debris.
